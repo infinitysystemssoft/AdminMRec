@@ -56,7 +56,7 @@ class WebViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_webview)
 
-        webUrl = intent.getStringExtra("KEY_URL")
+        webUrl = intent.getStringExtra("KEY_URL").toString()
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
         mEditText = findViewById<View>(R.id.editInput) as TextView
@@ -161,7 +161,7 @@ class WebViewActivity : AppCompatActivity() {
             )
         }
         mWebView.settings.setSupportZoom(true)
-        mWebView.settings.setAppCachePath(applicationContext.cacheDir.absolutePath)
+        //mWebView.settings.setAppCachePath(applicationContext.cacheDir.absolutePath)
         mWebView.settings.cacheMode = WebSettings.LOAD_DEFAULT
         mWebView.settings.databaseEnabled = true
         mWebView.settings.domStorageEnabled = true

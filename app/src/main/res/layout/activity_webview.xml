@@ -41,7 +41,7 @@
                 android:layout_marginTop="139dp"
                 android:elevation="2px"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/phone_icon_icons" />
+                android:src="@drawable/logo_mrec" />
 
             <TextView
                 android:layout_width="wrap_content"
